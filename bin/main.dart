@@ -1,10 +1,12 @@
+import 'son.dart';
+
 void main() {
-  var map = new Map();
-  map.addAll({"name": "showrav", "Roll": 485298, "Dept": "CMT-A"});
-  // map.clear();
-  map.remove('Dept');
-  print(map);
+  var obj = new Son();
+  obj.addTwo();
+  obj.multiTwo();
+  obj.name();
 }
+
 
 // type non sefty
 // var name = 'showrav Das'
@@ -87,3 +89,46 @@ void main() {
   // mymap["team"] = "ARG";
 
   // print(mymap);
+
+
+  //   var map = new Map();
+  // map.addAll({"name": "showrav", "Roll": 485298, "Dept": "CMT-A"});......map e eksathe onk gulo data add korar jonno
+  // map.clear(); ...... map e eksathe sob data clear korar jonno
+  // map.remove('Dept'); jeikono ekta item removed korar jonno
+  // print(map);
+
+
+
+  //hashmap
+  //  var hashMap = new HashMap();
+
+  // hashMap["name"] = "Showrav";
+  // hashMap["Roll"] = "485298";
+  // hashMap["Dept"] = "CMT-A";
+  // hashMap["team"] = "Danger";
+
+  // var myvalues;
+  // for (myvalues in hashMap.values) {
+  //   print(myvalues);
+  // }
+
+
+  // ফাংশন কি কি রির্টান করতে পারে আর কি কি রির্টান করতে পারে না ??
+
+  // একটা ফাংশন চাইলে সবকিছু রির্টান করতে পারে যেমন ইন্টজার স্ট্রিং ডাবল,ডেটা, ক্লাস, ভ্যালু, প্যাকেজ ইত্যাদি একটা ফাংশন চাইলে পুরো সফটওয়্যার কে রির্টান করতে পারে ...
+
+  // একটা ফাংশন যখন কোন কিছু রির্টান করে তখন ওই ফাংশন টা রির্টান এর সমতুল্য 
+  // হয়ে যায়
+
+
+// default parameter pass
+
+//   void main() {
+//   printInfo("John", "Male");
+//   printInfo("John", "Male", "Mr.");
+//   printInfo("Kavya", "Female", "Ms.");
+// }
+
+// void printInfo(String name, String gender, [String title = "sir/mam"]) {
+//   print("Hello $title $name your gender is $gender.");
+// }
